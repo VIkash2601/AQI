@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.nmc.gaugeView.SpeedViewActivity">
+
+    <com.nmc.aqi.TubeSpeedometer
+        android:id="@+id/speedometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        app:sv_tickNumber="11"
+        app:sv_tickPadding="45dp"
+        app:sv_markColor="#FFF"
+        app:sv_tickRotation="false"
+
+        app:sv_speedTextSize="22sp"
+        app:sv_unitTextSize="22sp"
+        app:sv_maxSpeed="500"
+
+        app:sv_severeLevelColor = "#8c2313"
+        app:sv_veryPoorLevelColor = "#f73213"
+        app:sv_poorLevelColor = "#fac401"
+        app:sv_moderateLevelColor = "#e6c7e8"
+        app:sv_satisfactoryLevelColor = "#547322"
+        app:sv_goodLevelColor = "#63e417"
+
+        app:sv_veryPoorLevelPercent="80"
+        app:sv_poorLevelPercent="60"
+        app:sv_moderateLevelPercent="40"
+        app:sv_satisfactoryLevelPercent="20"
+        app:sv_goodLevelPercent="10"
+
+        app:sv_startDegree="150"
+        app:sv_endDegree="390"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="500"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/textSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            tools:text="50" />
+
+        <Button
+            android:id="@+id/ok"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok" />
+    </LinearLayout>
+
+</LinearLayout>

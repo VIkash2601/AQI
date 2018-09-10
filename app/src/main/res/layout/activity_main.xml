@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1.4"
+        android:weightSum="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:text="@string/temperature"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="0.1"
+                android:hint="@string/temp_in_C"
+                android:textColorHint="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1.8"
+                android:textSize="16sp"
+                android:text="@string/degree_C"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:text="@string/humidity"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="0.1"
+                android:maxLines="1"
+                android:hint="@string/humidityHint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1.8"
+                android:textSize="16sp"
+                android:text="@string/percentSign"
+                android:textColor="#000"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:text="@string/heatIndex"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/heat_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="0.1"
+                android:hint="@string/heatIndexInPercent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1.8"
+                android:textSize="16sp"
+                android:text="@string/percentSign"
+                android:textColor="#000"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:text="@string/co"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/co"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="0.1"
+                android:hint="@string/COInPPM"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1.8"
+                android:textSize="16sp"
+                android:text="@string/ppm"
+                android:textColor="#000"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/co2_gas"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="74dp"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/co2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="0.1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1.8"
+                android:textSize="16sp"
+                android:text="@string/ppm"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:text="@string/PM2.5"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="0.1"
+                android:text="@string/PM2.5Hint" />
+
+            <TextView
+                android:id="@+id/ug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:textSize="16sp"
+                android:text="@string/PM2.5Unit"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="78dp"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:text="@string/AQI"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/aqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="0.1"
+                android:hint="@string/AQIHint"
+                android:textColorHint="#000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.nmc.aqi.TubeSpeedometer
+        android:id="@+id/speedometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="30sp"
+        android:layout_weight="0.6"
+        android:layout_gravity="center_horizontal"
+
+        app:sv_tickNumber="11"
+        app:sv_tickPadding="45dp"
+        app:sv_markColor="#FFF"
+        app:sv_tickRotation="false"
+
+        app:sv_speedTextSize="22sp"
+        app:sv_unitTextSize="22sp"
+        app:sv_maxSpeed="500"
+
+        app:sv_severeLevelColor = "#8c2313"
+        app:sv_veryPoorLevelColor = "#f73213"
+        app:sv_poorLevelColor = "#fac401"
+        app:sv_moderateLevelColor = "#e6c7e8"
+        app:sv_satisfactoryLevelColor = "#547322"
+        app:sv_goodLevelColor = "#63e417"
+
+        app:sv_veryPoorLevelPercent="80"
+        app:sv_poorLevelPercent="60"
+        app:sv_moderateLevelPercent="40"
+        app:sv_satisfactoryLevelPercent="20"
+        app:sv_goodLevelPercent="10"
+
+        app:sv_startDegree="150"
+        app:sv_endDegree="390"/>
+
+</LinearLayout>

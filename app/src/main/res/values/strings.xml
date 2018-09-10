@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AQI</string>
+    <!--MainActivityLayout-->
+    <string name="read_buffer">Read Buffer</string>
+    <string name="bluetooth_status">Bluetooth Status</string>
+    <string name="temperature">Temperature =</string>
+    <string name="temp_in_C">Temp</string>
+    <string name="degree_C">°C</string>
+    <string name="humidity">Humidity =</string>
+    <string name="humidityHint">humi</string>
+    <string name="percentSign">%</string>
+    <string name="heatIndex">Heat Index =</string>
+    <string name="heatIndexInPercent">Heat</string>
+    <string name="co">CO =</string>
+    <string name="COInPPM">COin</string>
+    <string name="ppm">ppm</string>
+    <string name="PM2.5">PM2.5 =</string>
+    <string name="PM2.5Hint">PM25</string>
+    <string name="PM2.5Unit">µg/m3</string>
+    <string name="AQI">AQI =</string>
+    <string name="AQIHint">AQIL</string>
+    <string name="pair">Pair</string>
+    <string name="cancel">Cancel</string>
+    <string name="pairDevice">Pair Device</string>
+    <string name="refresh">Refresh</string>
+    <string name="ok">OK</string>
+
+    <!--SplashScreenActivity-->
+
+    <string name="discovering">Discovering…</string>
+    <string name="discoveryStopped">Discovery Stopped</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="connectedDevice">Connected to Device: </string>
+    <string name="connectionFailed">Connection Failed</string>
+    <string name="statusBluetoothNotFound">Status: Bluetooth not found</string>
+    <string name="readBuffer">Read Buffer</string>
+    <string name="enablingBluetooth">Enabling Bluetooth…</string>
+    <string name="connecting">Connecting…</string>
+
+    <!--SplashScreenLayout-->
+
+    <string name="rx">RX:      </string>
+    <string name="status">Status:</string>
+    <string name="bluetoothON">Bluetooth ON</string>
+    <string name="bluetoothOFF">Bluetooth OFF</string>
+    <string name="showPairedDevices">Show paired Devices</string>
+    <string name="discoverNewDevices">Discover New Devices</string>
+    <string name="showData">Show Data</string>
+</resources>
