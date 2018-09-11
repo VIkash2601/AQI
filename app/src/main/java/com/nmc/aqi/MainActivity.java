@@ -70,12 +70,12 @@ public class MainActivity extends Activity {
         String[] dataList = mainData.split(",");
 
         temp_data = dataList[0];
-        /*humidity_data = dataList[1];
+        humidity_data = dataList[1];
         heatIndex_data = dataList[2];
         co_data = dataList[3];
         co2_data = dataList[4];
         pm_data = dataList[5];
-        aqi_data = dataList[6];*/
+        aqi_data = dataList[6];
 
         temp_content.setText(temp_data);
 
@@ -88,7 +88,7 @@ public class MainActivity extends Activity {
         aqi_content.setText(aqi_data);
 
          /*Send data to Gauge for AQI Level*/
-        float aqiData = Float.parseFloat(temp_data);
+        float aqiData = Float.parseFloat(aqi_data);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
